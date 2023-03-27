@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+
+}
+
+body, html {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-image: url("../assets/book.jpg");
+  background-position: center;
+  margin-top: 8rem;
+}
+
+.navbar {
+  background-color: #C9D5DA;
+}
+
+/* search-input*/
+.no-padding {
+  height: 2.5rem;
+}
+
+/* main areas page*/
+.manageProduct {
+  width: 75%;
+}
+
+.manageIndex {
+  width: 85%;
+}
+
+/* wrapper w/ media query for smaller screens*/
+.half {
+  width: 50%;
+}
+
+.img-bordered {
+  width: 100px;
+  /* height: 100px; */
+  object-fit: cover;
+}
+
+.img-bigger {
+  width: 400px;
+  /* height: 400px;  */
+  object-fit: cover;
+  border: 5px solid white;
+  border-radius: 1rem;
+}
+
+/* form areas page*/
+fieldset {
+  padding: 2rem;
+  width: 50%;
+}
+
+.two-thirds {
+width: 75%;
+}
+
+td, th {          
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+tr {
+  text-align: center;
+}
+
+.form-headers th {
+  width: 33%;
+}
+
+/* button styles overriding bs*/
+button {
+  margin: .5rem;
+  transition: all 0.3s ease-in-out!important;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.btn-success {
+  background-color: darkslategray;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: darkslategray;
+}
+
+.btn-danger {
+  background-color: brown;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: brown;
+}
+
+.btn-primary {
+  background-color: rgb(34, 34, 83);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: rgb(34, 34, 83);
+}
+
+/* icons contact page */
+i {
+  color:darkslategray;
+}
+
+i:hover {
+  color:  brown;
+}
+
+.floating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 10rem;
+  color: white;
+  text-shadow: 0px 0px 20px hotpink;
+}
+
+/* media queries*/
+@media screen and (max-width: 767px) {
+  .manageProduct {
+    width: 100%;
+  }
+
+  .manageIndex {
+    width: 100%;
+  }
+
+  fieldset {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .two-thirds, .half {
+    width: 95%;
+  }
+}
+
